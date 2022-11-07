@@ -13,7 +13,7 @@ namespace DataAccessDotNet
     public class DataAccess: IDataAccess
     {
         private readonly IConfiguration _Config;
-        public string ConnectionString;
+        private string ConnectionString;
 
         public SqlConnection sqlConnection;
         private DbTransaction sqlTransaction;
