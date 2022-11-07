@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess
+namespace DataAccessDotNet
 {
     public interface IDataAccess 
     {

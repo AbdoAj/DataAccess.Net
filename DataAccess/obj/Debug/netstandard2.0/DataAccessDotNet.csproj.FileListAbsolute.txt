@@ -1,0 +1,10 @@
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\bin\Debug\netstandard2.0\DataAccessDotNet.deps.json
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\bin\Debug\netstandard2.0\DataAccessDotNet.dll
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\bin\Debug\netstandard2.0\DataAccessDotNet.pdb
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\obj\Debug\netstandard2.0\DataAccessDotNet.csproj.AssemblyReference.cache
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\obj\Debug\netstandard2.0\DataAccessDotNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\obj\Debug\netstandard2.0\DataAccessDotNet.AssemblyInfoInputs.cache
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\obj\Debug\netstandard2.0\DataAccessDotNet.AssemblyInfo.cs
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\obj\Debug\netstandard2.0\DataAccessDotNet.csproj.CoreCompileInputs.cache
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\obj\Debug\netstandard2.0\DataAccessDotNet.dll
+C:\Users\abdoo\source\repos\DataAccess.Net\DataAccess\obj\Debug\netstandard2.0\DataAccessDotNet.pdb

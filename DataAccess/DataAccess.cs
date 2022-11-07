@@ -1,12 +1,12 @@
-﻿using DataAccess;
+﻿using DataAccessDotNet;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
-using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
 
 namespace DataAccessDotNet
 {
@@ -21,7 +21,7 @@ namespace DataAccessDotNet
         public DataAccess(IConfiguration configuration)
         {
             _Config = configuration;
-            ConnectionString = _Config.GetConnectionString("EsemsSchoolsDB");
+            ConnectionString = _Config.GetConnectionString("Db");
             sqlConnection = new SqlConnection(ConnectionString);
         }
 
@@ -206,7 +206,7 @@ namespace DataAccessDotNet
 
 
         #region SqlConnection & DbTransaction
-        private async Task OpenConnectionAsync()
+        public async Task OpenConnectionAsync()
         {
             try
             {
@@ -215,26 +215,25 @@ namespace DataAccessDotNet
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
         private async Task CloseConnectionAsync()
         {
-            await sqlConnection.CloseAsync();
+            await Task.Run(()=> sqlConnection.Close());
         }
         public async Task BeginTransactionAsync()
         {
-            sqlTransaction = await sqlConnection.BeginTransactionAsync();
+            sqlTransaction = await Task.Run(()=> sqlConnection.BeginTransaction());
         }
         public async Task CommitTransactionAsync()
         {
-            await sqlTransaction.CommitAsync();
+            await Task.Run(()=> sqlTransaction.Commit());
         }
         public async Task RollbackTransactionAsync()
         {
             if (sqlTransaction != null && sqlTransaction.Connection != null)
-                await sqlTransaction.RollbackAsync();
+                await Task.Run(()=> sqlTransaction.Rollback());
         }
         #endregion
 

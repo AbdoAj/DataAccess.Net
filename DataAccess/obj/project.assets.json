@@ -989,9 +989,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abdoo\\source\\repos\\DataAccess.Net\\DataAccess\\DataAccess.csproj",
-      "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\abdoo\\source\\repos\\DataAccess.Net\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\abdoo\\source\\repos\\DataAccess.Net\\DataAccess\\DataAccessDotNet.csproj",
+      "projectName": "DataAccessDotNet",
+      "projectPath": "C:\\Users\\abdoo\\source\\repos\\DataAccess.Net\\DataAccess\\DataAccessDotNet.csproj",
       "packagesPath": "C:\\Users\\abdoo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\abdoo\\source\\repos\\DataAccess.Net\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
