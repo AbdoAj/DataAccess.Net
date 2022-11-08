@@ -136,6 +136,37 @@
           }
         }
       },
+      "System.Configuration.Abstractions/2.0.2.45": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Configuration.ConfigurationManager": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Configuration.Abstractions.NetStandard.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.Abstractions.NetStandard.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "4.4.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.8.4": {
         "type": "package",
         "dependencies": {
@@ -245,6 +276,23 @@
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -633,6 +681,44 @@
         "version.txt"
       ]
     },
+    "System.Configuration.Abstractions/2.0.2.45": {
+      "sha512": "IceU4tA/HFSqwV4m4AnBbY25llZqQ17QIEsTaW6d76E4oe3Hx4gjBSuyDVrZ6kS2RxyR4liSxqIw/jRJXHbr6A==",
+      "type": "package",
+      "path": "system.configuration.abstractions/2.0.2.45",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Configuration.Abstractions.dll",
+        "lib/net40/System.Configuration.Abstractions.pdb",
+        "lib/net45/System.Configuration.Abstractions.dll",
+        "lib/net45/System.Configuration.Abstractions.pdb",
+        "lib/netstandard2.0/System.Configuration.Abstractions.NetStandard.dll",
+        "lib/netstandard2.0/System.Configuration.Abstractions.NetStandard.pdb",
+        "system.configuration.abstractions.2.0.2.45.nupkg.sha512",
+        "system.configuration.abstractions.nuspec"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/4.4.1": {
+      "sha512": "jz3TWKMAeuDEyrPCK5Jyt4bzQcmzUIMcY9Ud6PkElFxTfnsihV+9N/UCqvxe1z5gc7jMYAnj7V1COMS9QKIuHQ==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.xml",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.4.4.1.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Data.SqlClient/4.8.4": {
       "sha512": "45YflfcVXAu+Tnf0WnZzQIp9iGm+XvSvh8OosYHqax/nW3gV28NBSRvHFZ/IsuwV4JIypYCKBEOVzW+RB5+zgQ==",
       "type": "package",
@@ -881,6 +967,47 @@
         "version.txt"
       ]
     },
+    "System.Security.Cryptography.ProtectedData/4.4.0": {
+      "sha512": "cJV7ScGW7EhatRsjehfvvYVBvtiSMKgN8bOVI0bQhnF5bU7vnHVIsH49Kva7i7GWaWYvmEzkYVk1TC+gZYBEog==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.ProtectedData.dll",
+        "ref/net461/System.Security.Cryptography.ProtectedData.dll",
+        "ref/net461/System.Security.Cryptography.ProtectedData.xml",
+        "ref/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Security.Principal.Windows/4.7.0": {
       "sha512": "ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "type": "package",
@@ -980,6 +1107,7 @@
     ".NETStandard,Version=v2.0": [
       "Microsoft.Extensions.Configuration.Abstractions >= 7.0.0",
       "NETStandard.Library >= 2.0.3",
+      "System.Configuration.Abstractions >= 2.0.2.45",
       "System.Data.SqlClient >= 4.8.4"
     ]
   },
@@ -989,11 +1117,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abdoo\\source\\repos\\DataAccess.Net\\DataAccess\\DataAccessDotNet.csproj",
+      "projectUniqueName": "C:\\Users\\abdoo\\Source\\Repos\\AbdoAj\\DataAccess.Net\\DataAccess\\DataAccessDotNet.csproj",
       "projectName": "DataAccessDotNet",
-      "projectPath": "C:\\Users\\abdoo\\source\\repos\\DataAccess.Net\\DataAccess\\DataAccessDotNet.csproj",
+      "projectPath": "C:\\Users\\abdoo\\Source\\Repos\\AbdoAj\\DataAccess.Net\\DataAccess\\DataAccessDotNet.csproj",
       "packagesPath": "C:\\Users\\abdoo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abdoo\\source\\repos\\DataAccess.Net\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\abdoo\\Source\\Repos\\AbdoAj\\DataAccess.Net\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\abdoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1032,6 +1160,10 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+          "System.Configuration.Abstractions": {
+            "target": "Package",
+            "version": "[2.0.2.45, )"
+          },
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.8.4, )"
@@ -1048,7 +1180,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

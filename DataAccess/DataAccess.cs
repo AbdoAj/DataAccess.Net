@@ -7,6 +7,7 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace DataAccessDotNet
 {
@@ -21,10 +22,14 @@ namespace DataAccessDotNet
         public DataAccess(IConfiguration configuration)
         {
             _Config = configuration;
-            ConnectionString = _Config.GetConnectionString("Db");
+            ConnectionString = _Config.GetConnectionString("ConnectionString");
             sqlConnection = new SqlConnection(ConnectionString);
         }
-
+        public DataAccess()
+        {
+            ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            sqlConnection = new SqlConnection(ConnectionString);
+        }
         #region Sql Methods 
         #region Select
         public async Task<T> SqlSelectAsync<T>(string query) where T : new()
